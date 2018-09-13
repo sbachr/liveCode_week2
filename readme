@@ -1,0 +1,63 @@
+Welcome to the First Livecode in Phase 2 ! 
+
+Pada livecode ini, kalian diminta untuk membuat beberapa fitur (akan dijelaskan lebih detail di bawah) baik dari server maupun client. Diingatkan bahwa endpoint yang dibuat harus berdasarkan spesifikasi yang sudah diberikan. Spesifikasi tersebut berupa API Documentation yang link nya sbb : https://victoryquotes.docs.apiary.io/#. Aplikasi client dibangun menggunakan Vue.js
+
+Buat livecode ini di repo kalian masing2, dan dalam 1 repo terdapat 2 folder, yaitu client dan server. Setelah selesai, isilah google forms yang di share oleh instruktur, jangan lupa untuk menyertakan isi file .env untuk keperluan pengecekan.
+
+Notes : 
+Berhubung kompetensi livecode ini bukan MVC, maka kalian diperbolehkan untuk tidak membuat controller. 
+apabila kalian membuat routing nya di dalam 1 file router/index.js juga diperbolehkan
+File HTML telah disediakan, boleh menggunakan template ini, boleh juga menggunakan template sendiri di slack
+
+SUMMARY
+Aplikasi ini memungkinkan user untuk dapat melihat semua quotes yang telah di posting oleh siapapun tanpa harus login terlebih dahulu
+User harus login terlebih dahulu untuk dapat membuat, menghapus quotes miliknya sendiri
+Dalam 1 kali postingan, user dapat memasukan quotes 
+Setiap quotes terdapat fitur translate ke dalam bahasa indonesia
+Aplikasi ini dibuat SPA (Single Page Application) dan harus reactive. Apabila tidak reactive, -20 point.
+
+
+RELEASE 1 - Authentication
+Server - Register (10)
+Buatlah endpoint untuk membuat fitur register sesuai dengan spesifikasi yang terdapat pada API Documentation, perhatikan spesifikasi untuk value email dan password nya.
+
+Server - Login (10)
+Buatlah endpoint untuk membuat fitur login sesuai dengan spesifikasi yang terdapat pada API Documentation. 
+
+Client - Login (10)
+Buatlah fitur login di aplikasi client. Apabila user berhasil login, akan menampilkan pesan success (diusahakan tidak pakai alert), apabila user tidak berhasil login, misalnya salah email / password, akan menampilkan pesan error. 
+Setelah berhasil login, maka form untuk login harus hilang, lalu muncul link / button untuk logout 
+
+RELEASE 2 - Create Quotes
+Server (15)
+Buatlah endpoint untuk membuat fitur create quotes sesuai dengan spesifikasi yang terdapat pada API documentation
+Gunakan flow yang benar untuk men-assign value dari user id nya 
+
+Client (15)
+User harus login terlebih dahulu untuk dapat mengakses fitur ini. Setelah login, maka  form untuk create quotes akan ditampilkan.
+
+
+RELEASE 3 - Show All Quotes
+Server (10)
+Buatlah endpoint untuk membuat fitur show all quotes sesuai dengan spesifikasi yang terdapat pada API documentation.
+
+Client (10)
+User tidak harus login untuk dapat melihat semua quotes
+
+RELEASE 4 - Delete Quotes
+Server (10)
+Buatlah endpoint untuk membuat fitur delete quotes sesuai dengan spesifikasi yang terdapat pada API documentation.
+User hanya boleh menghapus quotes miliknya sendiri. 
+
+
+Client (10)
+User harus login terlebih dahulu untuk dapat mengakses fitur ini. Setelah login, maka  pada tampilan all quotes, apabila ada quotes yang miliknya sendiri akan muncul button / link untuk menghapus quotes. 
+
+
+RELEASE 5 - Google API (20)
+
+Di tampilan all quotes, terdapat link / button untuk translate quotes tersebut ke dalam bahasa indonesia menggunakan API Google Translate. Setiap kali link / button tsb di klik, maka hasil translation nya akan muncul di bawah quotes asli nya.
+
+RELEASE 6 - Optional 
+Buat fitur untuk like quotes
+Buat fitur untuk update quotes
